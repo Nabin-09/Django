@@ -104,5 +104,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 ```
 this is how static files are loaded 
 
+## Jinja and Django apps :
+
+Command to createapp
+
+```
+ python manage.py startapp <appname>
+```
+We create templates as we used to but where will the url be hit , we dont have a urls.py<br>
+that is where this is come into play.
 
 

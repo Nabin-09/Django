@@ -6,7 +6,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+/* Disable page scroll */
+html, body {
+    height: 100%;
+    overflow: hidden;
     background: #f7f8fc;
     color: #222;
 }
@@ -20,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 nav {
@@ -53,13 +57,14 @@ nav {
     color: #007bff;
 }
 
-/* Hero Section */
+/* Hero Section (No Scroll) */
 .hero {
-    height: 100vh;
+    min-height: calc(100vh - 80px); /* Adjust height minus navbar */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 80px; /* matches navbar height */
+    overflow: hidden; /* ensure no extra scroll happens */
 }
 
 .hero-content {
