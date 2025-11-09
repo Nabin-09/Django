@@ -1,13 +1,100 @@
-body{
-    background-color: #08153d;
-    color : #ffffff;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-h1{
+body {
+    background: #f7f8fc;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-content {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
-    
+    max-width: 600px;
 }
 
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
 
+.hero-content h1 span {
+    color: #007bff;
+}
+
+.hero-content p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}

@@ -102,5 +102,7 @@ Even after the above code , style woudn't be visible
 ```python
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 ```
-this is how static files are loaded
+this is how static files are loaded 
+
+
 

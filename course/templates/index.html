@@ -4,10 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nabin Sharma-Django</title>
+    <title>Nabin Sharma - Django</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Nabin is learning Django</h1>
+
+    <header>
+        <nav>
+            <h2 class="logo">Nabin</h2>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="mailto:sharmanabin.0910@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Nabin Sharma</span></h1>
+            <p>B.Tech CSE (2022–2026) | Amity University</p>
+            <p>Learning Django and building full-stack web applications.</p>
+
+            <a href="/about/" class="btn">About Me</a>
+        </div>
+    </section>
+
 </body>
 </html>
