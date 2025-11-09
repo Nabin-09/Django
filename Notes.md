@@ -67,7 +67,40 @@ urlpatterns = [
 
 Create folder <templates> and <static> at root dir on the same level of manage.py.<br>
 
-## Rendering the html file at 
+## Rendering the html file
 
+```python
+from django.shortcuts import render
+def home(request):
+    #return HttpResponse('Hello Dunia!')
+    return render(request , 'index.html')
+```
+ > How will it know where is the template 
 
+### Try linking a CSS file :
+
+>Linking in HTML wont do the task.<br>
+**Templating Engines** are the way to do so
+
+```html
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin Sharma-Django</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Nabin is learning Django</h1>
+</body>
+</html>
+```
+Even after the above code , style woudn't be visible
+
+```python
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+```
+this is how static files are loaded
 
