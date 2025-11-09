@@ -25,3 +25,8 @@ $ py manage.py runserver
 - routing (logic written in views.py and model.py has db models)
 
 ## Templates and Errors 
+
+### Basics Architecture :
+
+![architecture](https://github.com/Nabin-09/Django/blob/main/images/architecture.png?raw=1)
+
