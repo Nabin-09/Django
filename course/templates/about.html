@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin's About</title>
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+</head>
+<body>
+
+    <section class="about-section">
+        <div class="container">
+            <img src="{% static 'Profile.jpg' %}" alt="Profile Photo" class="profile-img">
+
+            <h1 class="name">Nabin Sharma</h1>
+            <h3 class="university">B.Tech CSE (2022 - 2026) • Amity University</h3>
+
+            <p class="bio">
+                I'm a Computer Science undergraduate passionate about building scalable software and exploring emerging technologies.
+                I enjoy working across full-stack development, system design, and building useful tools that solve real problems.
+                I’m constantly learning and improving by working on projects, contributing to open-source, and collaborating with developers online.
+            </p>
+
+            <div class="info">
+                <p><strong>Email:</strong> <a href="mailto:sharmanabin.0910@gmail.com">sharmanabin.0910@gmail.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Nabin-09" target="_blank">github.com/Nabin-09</a></p>
+            </div>
+
+            <a href="mailto:sharmanabin.0910@gmail.com" class="contact-btn">Get in Touch</a>
+        </div>
+    </section>
+
+</body>
+</html>
