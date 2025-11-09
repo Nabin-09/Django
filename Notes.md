@@ -24,3 +24,4 @@ $ py manage.py runserver
 
 - routing (logic written in views.py and model.py has db models)
 
+## Templates and Errors 
