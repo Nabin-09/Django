@@ -114,4 +114,24 @@ Command to createapp
 We create templates as we used to but where will the url be hit , we dont have a urls.py<br>
 that is where this is come into play.
 
+![arch-2](https://github.com/Nabin-09/Django/blob/main/images/arch-2.png?raw=1)
 
+### Including app in my main-app(course) : 
+```
+path('nabin/' , include('nabin.urls'))
+```
+
+### How to handle path in nabin/course
+
+```python
+
+from django.urls import path
+from . import views
+
+
+ 
+urlpatterns = [
+   path('' , views.all_items , name='all_items')
+]
+
+```
