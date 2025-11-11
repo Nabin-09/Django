@@ -135,3 +135,6 @@ urlpatterns = [
 ]
 
 ```
+
+### Learn more about templating and blocks
+
