@@ -138,3 +138,20 @@ urlpatterns = [
 
 ### Learn more about templating and blocks
 
+## Installing tailwind
+
+>Note : Make sure to use pip
+
+```
+python -m pip install --upgrade pip
+python -m ensurepip --upgrade
+pip install 'django-tailwind[reload]
+```
+
+Update settings and add app 'tailwind' out there
+
+<a href = https://django-tailwind.readthedocs.io/en/latest/installation.html>Click this to learn steps</a>
+
+Then install the tailwind app : 
+
+```python manage.py tailwind install```
