@@ -159,3 +159,4 @@ Then install the tailwind app :
 ## Handle model and URLs in Django
 
 Create your admin password in Django admin panel
+in the next step test something further
