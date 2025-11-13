@@ -155,3 +155,7 @@ Update settings and add app 'tailwind' out there
 Then install the tailwind app : 
 
 ```python manage.py tailwind install```
+
+## Handle model and URLs in Django
+
+Create your admin password in Django admin panel
